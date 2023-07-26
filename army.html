@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Army Manager</title>
+    <link rel="stylesheet" href="army.css">
+</head>
+<body>
+    <h1>Army Manager</h1>
+    <div class="resources">
+        <div class="food">
+            <span>Food:</span>
+            <span id="food-counter">50</span> <!-- Initial food supply: 50 -->
+        </div>
+    </div>
+    <div class="units">
+        <button id="soldier-btn">Soldier (Cost: 10)</button>
+        <button id="archer-btn">Archer (Cost: 15)</button>
+        <button id="goblin-btn">Goblin (Cost: 8)</button>
+        <button id="skeleton-btn">Skeleton (Cost: 12)</button>
+    </div>
+    <div class="unit-info">
+        <h2>Unit Information</h2>
+        <div id="info-soldier">
+            <h3>Soldier</h3>
+            <p>A basic foot soldier equipped with a sword and shield. Effective in close combat against most enemies.</p>
+            <p>Count: <span id="soldier-count">0</span></p> <!-- Display the soldier count here -->
+        </div>
+        <div id="info-archer">
+            <h3>Archer</h3>
+            <p>An archer armed with a bow and arrows. Can attack enemies from a distance.</p>
+            <p>Count: <span id="archer-count">0</span></p> <!-- Display the archer count here -->
+        </div>
+        <div id="info-goblin">
+            <h3>Goblin</h3>
+            <p>A small and agile creature that excels in surprise attacks. Often found in groups.</p>
+            <p>Count: <span id="goblin-count">0</span></p> <!-- Display the goblin count here -->
+        </div>
+        <div id="info-skeleton">
+            <h3>Skeleton</h3>
+            <p>An undead warrior with a sword. Resistant to physical attacks, but vulnerable to magic.</p>
+            <p>Count: <span id="skeleton-count">0</span></p> <!-- Display the skeleton count here -->
+        </div>
+    </div>
+    <button id="back-to-map-btn">Back to Map</button>
+    <script src="army.js"></script>
+</body>
+</html>
